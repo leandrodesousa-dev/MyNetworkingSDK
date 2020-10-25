@@ -46,10 +46,50 @@
 		D7FDA1882546087200D66308 /* MyNetworkingSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D7FDA192254609D000D66308 /* NetworkingLayer */,
 				D7FDA1892546087200D66308 /* MyNetworkingSDK.h */,
 				D7FDA18A2546087200D66308 /* Info.plist */,
 			);
 			path = MyNetworkingSDK;
+			sourceTree = "<group>";
+		};
+		D7FDA192254609D000D66308 /* NetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D7FDA19625460A0D00D66308 /* Encoding */,
+				D7FDA19525460A0500D66308 /* Service */,
+				D7FDA194254609E600D66308 /* Manager */,
+				D7FDA193254609DE00D66308 /* EndPoint */,
+			);
+			path = NetworkingLayer;
+			sourceTree = "<group>";
+		};
+		D7FDA193254609DE00D66308 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		D7FDA194254609E600D66308 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D7FDA19525460A0500D66308 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D7FDA19625460A0D00D66308 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
