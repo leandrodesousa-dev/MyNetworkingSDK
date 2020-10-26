@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7977B6925462E0900235918 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7977B6825462E0900235918 /* JSONParameterEncoder.swift */; };
+		D7977B6C25462EBF00235918 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7977B6B25462EBF00235918 /* NetworkRouter.swift */; };
+		D7977B702546309B00235918 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7977B6F2546309B00235918 /* Router.swift */; };
 		D7FDA18B2546087200D66308 /* MyNetworkingSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D7FDA1892546087200D66308 /* MyNetworkingSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7FDA19825460CF700D66308 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA19725460CF700D66308 /* EndPointType.swift */; };
+		D7FDA1A425460F3900D66308 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA1A325460F3900D66308 /* HTTPMethods.swift */; };
+		D7FDA1A825460FD600D66308 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA1A725460FD600D66308 /* HTTPTask.swift */; };
+		D7FDA1AB254610A700D66308 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA1AA254610A700D66308 /* ParameterEncoding.swift */; };
+		D7FDA1AE2546134F00D66308 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDA1AD2546134F00D66308 /* URLParameterEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7977B6825462E0900235918 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		D7977B6B25462EBF00235918 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		D7977B6F2546309B00235918 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D7FDA1862546087200D66308 /* MyNetworkingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyNetworkingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FDA1892546087200D66308 /* MyNetworkingSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNetworkingSDK.h; sourceTree = "<group>"; };
 		D7FDA18A2546087200D66308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7FDA19725460CF700D66308 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		D7FDA1A325460F3900D66308 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		D7FDA1A725460FD600D66308 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		D7FDA1AA254610A700D66308 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		D7FDA1AD2546134F00D66308 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,29 +74,17 @@
 			children = (
 				D7FDA19625460A0D00D66308 /* Encoding */,
 				D7FDA19525460A0500D66308 /* Service */,
-				D7FDA194254609E600D66308 /* Manager */,
-				D7FDA193254609DE00D66308 /* EndPoint */,
 			);
 			path = NetworkingLayer;
-			sourceTree = "<group>";
-		};
-		D7FDA193254609DE00D66308 /* EndPoint */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EndPoint;
-			sourceTree = "<group>";
-		};
-		D7FDA194254609E600D66308 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		D7FDA19525460A0500D66308 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				D7FDA1A225460F2300D66308 /* HTTP */,
+				D7FDA19725460CF700D66308 /* EndPointType.swift */,
+				D7977B6B25462EBF00235918 /* NetworkRouter.swift */,
+				D7977B6F2546309B00235918 /* Router.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -88,8 +92,20 @@
 		D7FDA19625460A0D00D66308 /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
+				D7FDA1AA254610A700D66308 /* ParameterEncoding.swift */,
+				D7FDA1AD2546134F00D66308 /* URLParameterEncoding.swift */,
+				D7977B6825462E0900235918 /* JSONParameterEncoder.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		D7FDA1A225460F2300D66308 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				D7FDA1A325460F3900D66308 /* HTTPMethods.swift */,
+				D7FDA1A725460FD600D66308 /* HTTPTask.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +150,7 @@
 				TargetAttributes = {
 					D7FDA1852546087200D66308 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -170,6 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7977B702546309B00235918 /* Router.swift in Sources */,
+				D7FDA1A825460FD600D66308 /* HTTPTask.swift in Sources */,
+				D7FDA1A425460F3900D66308 /* HTTPMethods.swift in Sources */,
+				D7977B6925462E0900235918 /* JSONParameterEncoder.swift in Sources */,
+				D7FDA1AB254610A700D66308 /* ParameterEncoding.swift in Sources */,
+				D7FDA19825460CF700D66308 /* EndPointType.swift in Sources */,
+				D7FDA1AE2546134F00D66308 /* URLParameterEncoding.swift in Sources */,
+				D7977B6C25462EBF00235918 /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +326,8 @@
 		D7FDA18F2546087200D66308 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PQG7HAF33B;
@@ -317,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.academymistic.MyNetworkingSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +353,8 @@
 		D7FDA1902546087200D66308 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PQG7HAF33B;
